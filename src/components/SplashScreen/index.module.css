@@ -1,0 +1,39 @@
+.splash {
+  background-color: aliceblue;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.splash :global(.slick-dots) {
+  @apply px-5 top-4;
+  position: absolute;
+  left: 0;
+  display: flex!important;
+  justify-content: space-between;
+  width: 100%;
+  height: 2rem;
+}
+
+.splash :global(.slick-dots ul) {
+  display: flex;
+  justify-content: space-between;
+}
+.splash :global(.slick-dots li) {
+  flex: 1;
+}
+
+.splash :global(.slick-dots button:before) {
+  display: none;
+}
+
+.splash :global(.slick-dots button) {
+  height: 4px;
+  width: 100%;
+  background-color: #667085;
+  border-radius: 12px;
+}
+
+.splash :global(.slick-dots .slick-active button) {
+  background-color: #1D2939;
+}

@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* border: 1px solid red; */
+}
+@font-face {
+  font-family: 'SVN-Gilroy_Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/SVNGilroy_Bold.woff') format('woff');
+}
+
+.welcome-redtab {
+ font-family: 'SVN-Gilroy_Bold',sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.border1 {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.back-black1 {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.border1 {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.black-trans {
+
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.black-trans1 {
+
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+input[type="password"] {
+  border-radius: 5px;
+  color: #1D2939;
+  letter-spacing: 1px;
+  /* font-size: 36px; */
+}
+
+
+.Toastify__toast--error {
+  border: none !important;
+  border-radius: 50px !important;
+  background: #1D2939 !important;
+  height: 10px !important;
+}
+
+
+.Toastify__toast--success {
+  border: none;
+  border-radius: 50px !important;
+  background: #1D2939 !important;
+}
+
+
+.Toastify__toast--warning {
+  border: none;
+  border-radius: 50px !important;
+  background: #1D2939 !important;
+}
+
+
+.Toastify__toast-body {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 4px;
+  font-weight: 400;
+  margin: 0px !important;
+  margin-left: 10px !important;
+
+}
+
+.Toastify__toast>button>svg {
+  display: none;
+  color: transparent;
+}
+
+/* .Toastify__progress-bar--wrp {
+  display: none;
+} */
+.Toastify__progress-bar--error {
+  background: none !important;
+}
+
+.Toastify__progress-bar--success {
+  background: none !important;
+}
+
+.Toastify__progress-bar--warning {
+  background: none !important;
+}
+
+.Toastify__toast {
+  min-height: 48px !important;
+}
+
+@media only screen and (max-width: 480px) {
+
+  .Toastify__toast-container {
+    width: 100vw;
+
+  }
+
+  .Toastify__toast {
+    margin-top: 35px;
+    width: 90%;
+    min-height: 48px !important;
+    margin-left: 22px !important;
+  }
+
+}
+
+.nepali-date-picker .calender{
+ -webkit-user-select: auto;
+-moz-user-select: all;
+-ms-user-select: all;
+user-select: all;
+font-family: 'Poppins', sans-serif;
+}
+
+
+
+.h-screen{
+  height: 100dvh;
+}
+
+.min-h-screen{
+  min-height: 100dvh;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+    -webkit-appearance: none;
+        width: 0;
+        height: 0;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    /* overflow: -moz-scrollbars-none; */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* change the input css for team section only*/
+.staff-pin input[type="password"]{
+  color: #C5CAD1;
+  letter-spacing: 8px;
+}
+.staff-pin input[type="password"]::placeholder{
+  letter-spacing: 0;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: #FF3D00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  }
+
+  @keyframes rotation {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+  }
+
+  
+  @media (max-width: 341px) {
+    .item-name,
+    .item-count,
+    .item-price {
+      width: 70px;
+    }
+  }
+  
